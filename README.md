@@ -27,8 +27,9 @@ Welcome to your friendly guide to understanding LeetCode problems! This reposito
 
 bash
 ## 1. Clone the repository
+- Remember to change yourusername down this.
 ```
-git clone git@github.com:acheronx0577/LeetCode-Array-Answers-Python3.git
+git clone git@github.com:yourusername/LeetCode-Array-Answers-Python3.git
 ```
 ## 2. Navigate to the project
 ```
