@@ -1,14 +1,49 @@
 class solution:
     def hades(self, nums: list[int], target: int):
         seen = {} # Create a hash table first to store the list 
-        for i in range(len(nums)): # This is the loop will start with i which is 0, in len(nums) means it will count how many numbers in a list then the range(list(nums)) will take that and know the order of the index in the list so lets say 4 numbers and start with 0, 1, 2, 3 so in total there are 4 numbers and so on.
+        for i in range(len(nums)): 
+"""
+This is the loop that will start with i, which is 0.
+len(nums) means it will count how many numbers are in the list.
+Then range(len(nums)) will take that count and determine the index order for the list.
+For example, with 4 numbers [5, 8, 12, 17], the range(len(nums)) will be range(4),
+which generates indices 0, 1, 2, 3.
+So in total, len(nums) will recognize there are 4 numbers, and so on.
+"""
 
-            aella = target - nums[i] # Now after we got the hash table and the loop we need something to calculate and the method o(n*2) is not good because of the time it consume to calculate every posibiliies to equal the target number, so instead we take the target number and minus to one of the numbers in the list thats given and use that as the method to save so much time!
-
-            if aella in seen: # Okay so after we got the number we want to check the other number in the list so we put it to in the hash table to check it and give us the answer if its in the hash table.
-
-                # If the number is seen inside the hash table it will give us the sum which is aella and, i which is index number of that sum so lets saythe target is 13 and the list is [5, 8, 12, 17] we take the first number which is 5 and the index number is 0 the reason it's 0 is range(len(nums)), so reread if you don't understand, so when 13 - 5 = 8, 8 is the sum which is aella in this case now because in the first loop its going to be empty inside the dictionary so it will run the else which is false instead and save it as a key inside that hash table as nums[i] = 5 = 0(i is index) now it will go to the next number which is 8 so 13 - 8 = 5, now because 5 is already saved in the hash table as the first number so this will trigger as true and return as seen[5] = 0 and 8 is going to be seen[8] = 1 so the answer is going to be [0, 1] as 8 + 5 = 13
+            aella = target - nums[i] 
+            """
+            Now that we have the hash table and the loop, we need something to calculate.
+            The O(n²) method is not good because of the time it consumes to calculate 
+            every possibility to equal the target number. Instead, we take the target number 
+            and subtract one of the numbers from the given list, and use that as the method 
+            to save so much time!
+            """
+            if aella in seen: 
+                """
+                Okay, so after we get the number, we want to check if the other number is in the list.
+                We put it in the hash table to check and see if it's already there,
+                which would give us the answer we're looking for.
+                """
                 return [seen[aella], i]
+                """
+                If the number is found inside the hash table, it will give us the complement (which is aella) 
+                and i, which is the index number of the current number. 
+
+                Let's say the target is 13 and the list is [5, 8, 12, 17]. 
+                We take the first number, which is 5, and the index number is 0 
+                (the reason it's 0 is because of range(len(nums)) - reread the comments on top if you don't understand).
+
+                When we calculate 13 - 5 = 8, 8 is the complement (aella in this case). 
+                Since in the first loop the dictionary is empty, it will execute the else statement 
+                (which is false for the if condition) and save it as a key in the hash table as 
+                nums[i] = 5:0 (where i is the index).
+
+                Now it moves to the next number, which is 8. We calculate 13 - 8 = 5. 
+                Since 5 is already saved in the hash table as the first number, this will trigger 
+                as true and return seen[5] = 0 and the current index i = 1. 
+                So the answer will be [0, 1] because 5 + 8 = 13.
+                """
             else:
                 seen[nums[i]] = i
 
