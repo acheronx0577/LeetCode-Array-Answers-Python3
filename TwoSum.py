@@ -2,14 +2,14 @@ class solution:
     def hades(self, nums: list[int], target: int):
         seen = {} # Create a hash table first to store the list 
         for i in range(len(nums)): 
-"""
-This is the loop that will start with i, which is 0.
-len(nums) means it will count how many numbers are in the list.
-Then range(len(nums)) will take that count and determine the index order for the list.
-For example, with 4 numbers [5, 8, 12, 17], the range(len(nums)) will be range(4),
-which generates indices 0, 1, 2, 3.
-So in total, len(nums) will recognize there are 4 numbers, and so on.
-"""
+        """
+        This is the loop that will start with i, which is 0.
+        len(nums) means it will count how many numbers are in the list.
+        Then range(len(nums)) will take that count and determine the index order for the list.
+        For example, with 4 numbers [5, 8, 12, 17], the range(len(nums)) will be range(4),
+        which generates indices 0, 1, 2, 3.
+        So in total, len(nums) will recognize there are 4 numbers, and so on.
+        """
 
             aella = target - nums[i] 
             """
