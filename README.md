@@ -40,9 +40,11 @@ ls
 ```
 cd LeetCode-Array-Answers-Python3
 ```
+
 ---
 <img width="461" height="38" alt="image" src="https://github.com/user-attachments/assets/4ed1d849-ee80-45b7-bb8e-26ce226660d5" />
 ---
+
 ## 3. Make a new branch
 ```
 git checkout -b "Your Branch Name HERE"
