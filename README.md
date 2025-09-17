@@ -26,14 +26,43 @@ Welcome to your friendly guide to understanding LeetCode problems! This reposito
 ## 🛠️ Installation & Usage
 
 bash
-# Clone the repository
-git clone https://github.com/yourusername/leetcode-solutions.git
-
-# Navigate to the project
+## 1. Clone the repository
+```
+git clone git@github.com:acheronx0577/LeetCode-Array-Answers-Python3.git
+```
+## 2. Navigate to the project
+```
 cd leetcode-solutions
+```
+## 3. Make a new branch
+```
+git checkout -b "Your Branch Name HERE"
+```
+## 4. Run a solution
+```
+py two_sum.py
+```
+## 5. Make your changes and save it
+```
+git add .
+```
+```
+git commit -m "Add: Description of your changes"
+```
+### Use conventional commit messages:
+- Add: for new features
+- Fix: for bug fixes
+- Update: for improvements
 
-# Run a solution
-python two_sum.py
+## 6. Push to Your Branch (remember the branch name)
+```
+git push origin yourbranchname
+```
+## 7. Create a Pull Request
+- Go to the original repository on GitHub
+- Click "Compare & pull request"
+- Add a clear description of your changes
+- Submit the pull request
 
 ---
 
