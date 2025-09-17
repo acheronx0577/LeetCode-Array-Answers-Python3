@@ -32,7 +32,7 @@ git clone git@github.com:acheronx0577/LeetCode-Array-Answers-Python3.git
 ```
 ## 2. Navigate to the project
 ```
-cd leetcode-solutions
+cd yourrepository
 ```
 ## 3. Make a new branch
 ```
