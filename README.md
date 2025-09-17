@@ -34,12 +34,15 @@ git clone git@github.com:acheronx0577/LeetCode-Array-Answers-Python3.git
 ```
 ls
 ```
+---
 <img width="601" height="182" alt="image" src="https://github.com/user-attachments/assets/a187d0d4-d476-46f1-8993-653239944f38" />
+---
 ```
 cd LeetCode-Array-Answers-Python3
 ```
+---
 <img width="461" height="38" alt="image" src="https://github.com/user-attachments/assets/4ed1d849-ee80-45b7-bb8e-26ce226660d5" />
-
+---
 ## 3. Make a new branch
 ```
 git checkout -b "Your Branch Name HERE"
