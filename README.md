@@ -24,8 +24,6 @@ Welcome to your friendly guide to understanding LeetCode problems! This reposito
 ---
 
 ## 🛠️ Installation & Usage
-
-bash
 ## 1. Clone the repository
 - Remember to change yourusername down this.
 ```
