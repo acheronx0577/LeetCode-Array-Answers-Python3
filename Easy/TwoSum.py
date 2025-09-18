@@ -1,5 +1,5 @@
 class Solution:
-    def hades(self, nums: list[int], target: int):
+    def twoSum(self, nums: list[int], target: int):
         seen = {}  # Create a hash table first to store the list
         for i in range(len(nums)):
             """
@@ -11,7 +11,7 @@ class Solution:
             So in total, len(nums) will recognize there are 4 numbers, and so on.
             """
 
-            aella = target - nums[i]
+            diff = target - nums[i]
             """
             Now that we have the hash table and the loop, we need something to calculate.
             The O(n²) method is not good because of the time it consumes to calculate
@@ -20,13 +20,13 @@ class Solution:
             to save so much time!
             """
 
-            if aella in seen:
+            if diff in seen:
                 """
                 Okay, so after we get the number, we want to check if the other number is in the list.
                 We put it in the hash table to check and see if it's already there,
                 which would give us the answer we're looking for.
                 """
-                return [seen[aella], i]
+                return [seen[diff], i]
                 """
                 If the number is found inside the hash table, it will give us the complement (which is aella)
                 and i, which is the index number of the current number.
@@ -47,9 +47,3 @@ class Solution:
                 """
             else:
                 seen[nums[i]] = i
-
-
-sol = Solution()
-print(sol.hades([5, 8, 12, 17], 13))
-print(sol.hades([4, 6, 9, 3], 12))
-print(sol.hades([7, 7, 2, 1], 14))
