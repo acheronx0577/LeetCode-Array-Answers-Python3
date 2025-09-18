@@ -28,14 +28,14 @@ class Solution:
                 """
                 return [seen[diff], i]
                 """
-                If the number is found inside the hash table, it will give us the complement (which is aella)
+                If the number is found inside the hash table, it will give us the complement (which is diff)
                 and i, which is the index number of the current number.
 
                 Let's say the target is 13 and the list is [5, 8, 12, 17].
                 We take the first number, which is 5, and the index number is 0
                 (the reason it's 0 is because of range(len(nums)) - reread the comments on top if you don't understand).
 
-                When we calculate 13 - 5 = 8, 8 is the complement (aella in this case).
+                When we calculate 13 - 5 = 8, 8 is the complement (diff in this case).
                 Since in the first loop the dictionary is empty, it will execute the else statement
                 (which is false for the if condition) and save it as a key in the hash table as
                 nums[i] = 5:0 (where i is the index).
@@ -47,3 +47,4 @@ class Solution:
                 """
             else:
                 seen[nums[i]] = i
+
